@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PO Kaos Haul</title>
+<title>PRE ORDER KAOS HAUL</title>
 
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
 <header>
-<h1>PRE ORDER KAOS HAUL</h1>
+
+<h1>PRE ORDER KAOS HAUL KE-28</h1>
+
 <p>Abah Sepuh Sukamandi Al-Mu'awanah</p>
+
 </header>
 
-<section class="banner">
-<h2>Silakan Isi Form Pemesanan</h2>
-<p>Isi data dengan benar.</p>
+
+<!-- GALERI FOTO -->
+
+<section class="galeri">
+
+<div class="slide">
+
+<img id="fotoProduk" src="images/kaos-hitam.png" alt="Kaos Haul">
+
+</div>
+
 </section>
 
+
+<!-- FORM -->
+
 <section class="info">
+
+<h2>Form Pemesanan</h2>
 
 <form id="formPesanan">
 
@@ -31,6 +49,18 @@
 <label>Nomor WhatsApp</label>
 <input type="tel" id="wa" required>
 
+<label>Warna</label>
+<select id="warna">
+<option>Hitam</option>
+<option>Putih</option>
+</select>
+
+<label>Model</label>
+<select id="model">
+<option>Lengan Pendek</option>
+<option>Lengan Panjang</option>
+</select>
+
 <label>Ukuran</label>
 <select id="ukuran">
 <option>S</option>
@@ -38,56 +68,45 @@
 <option>L</option>
 <option>XL</option>
 <option>XXL</option>
-<option>3XL</option>
-</select>
-
-<label>Warna</label>
-<select id="warna">
-<option>Hitam</option>
-<option>Putih</option>
 </select>
 
 <label>Jumlah</label>
-<input type="number" id="jumlah" value="1">
+<input type="number" id="jumlah" value="1" min="1">
+
+<h2 id="harga">Rp115.000</h2>
 
 <button type="button" onclick="kirimWA()">
-Pesan Sekarang
+
+Pesan via WhatsApp
+
 </button>
 
 </form>
 
 </section>
 
-<footer>
-©2026 PO Kaos Haul
-</footer>
 
-<script src="js/script.js"></script>
+<section class="info">
 
-</body>
-</html>
-<section class="produk">
+<h2>Spesifikasi</h2>
 
-<h2>Pilih Model Kaos</h2>
+<ul>
 
-<div class="produk-item">
-<img src="images/kaos-putih.jpg" alt="Kaos Putih">
-<p>Kaos Putih Depan</p>
-</div>
+<li>✔ Cotton Combed 24s Premium</li>
 
-<div class="produk-item">
-<img src="images/kaos-hitam.png" alt="Kaos Hitam">
-<p>Kaos Hitam Depan</p>
-</div>
+<li>✔ Sablon Plastisol</li>
 
-<div class="produk-item">
-<img src="images/putih-belakang.webp" alt="Belakang Putih">
-<p>Kaos Putih Belakang</p>
-</div>
+<li>✔ Warna Hitam & Putih</li>
 
-<div class="produk-item">
-<img src="images/putih-depan-ok.webp" alt="Putih Depan">
-<p>Model Putih</p>
-</div>
+<li>✔ Lengan Pendek & Panjang</li>
+
+<li>✔ Bonus Sticker</li>
+
+</ul>
 
 </section>
+
+
+<footer>
+
+©2026 PO Kaos Haul
